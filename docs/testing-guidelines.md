@@ -38,7 +38,7 @@ This allows CI/CD workflows to dynamically detect ports.
 
 - Use **Playwright** to test complete UI workflows through browser automation.
 - **E2E tests:** `tests/e2e/`
-- **Naming convention:** `*.test.ts` — name files after the user journey they test (e.g., `add-task.test.ts`, `complete-task.test.ts`).
+- **Naming convention:** `*.spec.ts` — name files after the user journey they test (e.g., `add-task.spec.ts`, `complete-task.spec.ts`).
 
 ### Rules
 
