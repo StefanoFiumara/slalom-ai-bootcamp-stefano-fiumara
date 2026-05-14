@@ -10,7 +10,7 @@ test.describe('Edit Task Journey', () => {
   test('edits existing task title and due date', async ({ page }) => {
     const todo = new TodoPage(page);
     const original = `E2E edit original ${Date.now()}`;
-    const updated = `${original} updated`;
+    const updated = `E2E edit updated ${Date.now()}`;
 
     await todo.addTask(original);
     await todo.openEditDialog(original);

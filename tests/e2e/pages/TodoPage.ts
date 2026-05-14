@@ -17,7 +17,7 @@ export class TodoPage {
     if (dueDate) {
       await this.page.getByLabel('Due date').first().fill(dueDate);
     }
-    await this.page.getByRole('button', { name: 'Add' }).click();
+    await this.page.getByRole('button', { name: 'Add', exact: true }).click();
     await expect(this.page.getByText(title)).toBeVisible();
   }
 
